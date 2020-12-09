@@ -5,3 +5,12 @@ spring:
       username: root
       password: ${dbpassword}
       driver-class-name: com.mysql.cj.jdbc.Driver
+
+  cloud:
+    nacos:
+      discovery:
+        #需要指定nacos server的地址，注意不要加协议
+        server-addr: 192.168.31.228:8848
+
+  application:
+    name: content-center
